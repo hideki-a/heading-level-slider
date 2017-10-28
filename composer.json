@@ -1,0 +1,48 @@
+{
+    "name": "hideki-a/heading-level-slider",
+    "description": "Slide level of HTML hx(h1-h6) tag ",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "headinglevelslider"
+    ],
+    "support": {
+        "docs": "https://github.com/hideki-a/heading-level-slider/blob/master/README.md",
+        "issues": "https://github.com/hideki-a/heading-level-slider/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hideki Abe",
+            "homepage": "https://www.anothersky.pw"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.23",
+        "vikpe/php-html-heading-normalizer": "^1.1"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "hidekia\\headinglevelslider\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "HeadingLevelSlider",
+        "handle": "heading-level-slider",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/hideki-a/heading-level-slider/master/CHANGELOG.md",
+        "class": "hidekia\\headinglevelslider\\HeadingLevelSlider"
+    }
+}
