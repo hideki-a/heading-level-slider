@@ -72,17 +72,18 @@ class HeadingLevelSliderTwigExtension extends \Twig_Extension
     /**
      * 
      *
-     * @param null $text
+     * @param string $html
+     * @param int $minLevel
      *
      * @return string
      */
     /**
      * @return string
      */
-    public function hnSlider($text = null)
+    public function hnSlider($html, $minLevel = 2)
     {
         $meta = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">';
-        $result = \Vikpe\HtmlHeadingNormalizer::min($meta . $text, 3);
+        $result = \Vikpe\HtmlHeadingNormalizer::min($meta . $html, $minLevel);
         $result = str_replace($meta, '', $result);
 
         return $result;
