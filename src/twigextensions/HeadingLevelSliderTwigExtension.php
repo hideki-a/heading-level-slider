@@ -65,8 +65,7 @@ class HeadingLevelSliderTwigExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('hnslider', [$this, 'hnSlider'], [
-            'is_safe' => ['html']]),
+            new \Twig_SimpleFunction('hnslider', [$this, 'hnSlider'], []),
         ];
     }
 
