@@ -67,7 +67,7 @@ class HeadingLevelSlider extends Plugin
         self::$plugin = $this;
 
         // Add in our Twig extensions
-        Craft::$app->view->twig->addExtension(new HeadingLevelSliderTwigExtension());
+        Craft::$app->view->registerTwigExtension(new HeadingLevelSliderTwigExtension());
 
         // Do something after we're installed
         // Event::on(
