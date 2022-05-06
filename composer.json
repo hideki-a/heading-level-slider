@@ -2,7 +2,7 @@
     "name": "hideki-a/heading-level-slider",
     "description": "Slide level of HTML hx(h1-h6) tag ",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0",
+        "craftcms/cms": "*",
         "vikpe/php-html-heading-normalizer": "^1.1"
     },
     "repositories": [
