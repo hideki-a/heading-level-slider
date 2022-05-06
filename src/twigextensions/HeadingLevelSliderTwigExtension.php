@@ -13,6 +13,9 @@ namespace hidekia\headinglevelslider\twigextensions;
 use hidekia\headinglevelslider\HeadingLevelSlider;
 
 use Craft;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+use Twig\TwigFunction;
 
 /**
  * Twig can be extended in many ways; you can add extra tags, filters, tests, operators,
@@ -25,7 +28,7 @@ use Craft;
  * @package   HeadingLevelSlider
  * @since     1.0.0
  */
-class HeadingLevelSliderTwigExtension extends \Twig_Extension
+class HeadingLevelSliderTwigExtension extends AbstractExtension
 {
     // Public Methods
     // =========================================================================
