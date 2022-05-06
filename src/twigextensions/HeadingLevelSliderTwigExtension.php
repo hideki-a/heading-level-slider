@@ -53,7 +53,7 @@ class HeadingLevelSliderTwigExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('hnslider', [$this, 'hnSlider'], [
+            new TwigFilter('hnslider', [$this, 'hnSlider'], [
             'is_safe' => ['html']]),
         ];
     }
@@ -68,7 +68,7 @@ class HeadingLevelSliderTwigExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('hnslider', [$this, 'hnSlider'], []),
+            new TwigFunction('hnslider', [$this, 'hnSlider'], []),
         ];
     }
 
