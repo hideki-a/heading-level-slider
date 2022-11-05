@@ -2,7 +2,7 @@
 /**
  * HeadingLevelSlider plugin for Craft CMS 3.x
  *
- * Slide level of HTML hx(h1-h6) tag 
+ * Slide level of HTML hx(h1-h6) tag
  *
  * @link      https://www.anothersky.pw
  * @copyright Copyright (c) 2017 Hideki Abe
@@ -73,7 +73,7 @@ class HeadingLevelSliderTwigExtension extends AbstractExtension
     }
 
     /**
-     * 
+     *
      *
      * @param string $html
      * @param int $minLevel
@@ -85,9 +85,11 @@ class HeadingLevelSliderTwigExtension extends AbstractExtension
      */
     public function hnSlider($html, $minLevel = 2)
     {
+        $internalErrors = libxml_use_internal_errors(true);
         $meta = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">';
         $result = \Vikpe\HtmlHeadingNormalizer::min($meta . $html, $minLevel);
         $result = str_replace($meta, '', $result);
+        libxml_use_internal_errors($internalErrors);
 
         return $result;
     }
